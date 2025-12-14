@@ -23,6 +23,28 @@ class AuthController extends Controller
         return back()->withErrors(['email' => 'Email atau password salah']);
     }
 
+    public function showRegister()
+    {
+        return view('auth.register');
+    }
+
+    public function register(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required|string|max:100',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:6|confirmed'
+        ]);
+
+        \App\Models\User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password'])
+        ]);
+
+        return redirect()->route('login')->with('success', 'Registrasi berhasil, silakan login.');
+    }
+
     public function logout()
     {
         session()->flush();
