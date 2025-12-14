@@ -23,7 +23,7 @@ untuk pemilihan supplier bahan baku UMKM menggunakan metode SAW.
 4. php artisan migrate --seed
 5. php artisan serve
 
-##Struktur File
+## Struktur File
 app/
   Http/
     Controllers/
