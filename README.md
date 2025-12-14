@@ -78,3 +78,4 @@ resources/
     └── partials/
         ├── _criteria_form.blade.php
         └── _alternative_form.blade.php
+
