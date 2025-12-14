@@ -24,7 +24,7 @@ untuk pemilihan supplier bahan baku UMKM menggunakan metode SAW.
 5. php artisan serve
 
 ## Struktur File
-app/
+1. app/
   Http/
     Controllers/
       AuthController.php
