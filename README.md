@@ -46,8 +46,6 @@ untuk pemilihan supplier bahan baku UMKM menggunakan metode SAW.
     │   ├── 2025_01_01_000002_create_alternatives_table.php
     │   └── 2025_01_01_000003_create_values_table.php
     │
-    └── seeders/
-    │   └── DatabaseSeeder.php
     │
     routes/
     └── web.php
